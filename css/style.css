@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,12 @@ body {
   font-family: "Inconsolata", monospace;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .container {
   max-width: calc(100% - 77px);
   width: 100%;
@@ -16,4 +23,46 @@ body {
 
 .container .navbar {
   padding: 2em 0;
+}
+
+.hero-content {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.hero-img {
+  flex: 1;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  max-width: 380px;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.hero-text button {
+  padding: 1.5em 3em;
+  outline: none;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .hero-content {
+    flex-direction: column;
+  }
 }
